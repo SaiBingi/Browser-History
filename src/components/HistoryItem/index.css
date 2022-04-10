@@ -1,0 +1,89 @@
+.history-item {
+  padding-left: 20px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.domain-container {
+  display: flex;
+  max-width: 70%;
+}
+
+.time-accessed {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.domain-logo {
+  height: 23px;
+  width: 25px;
+  margin-right: 12px;
+}
+
+.domain-title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 15px;
+  color: #475569;
+  margin-top: 0px;
+  margin-bottom: -10px;
+}
+
+.domain-url {
+  color: grey;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.domain-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.domain-delete {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.delete-icon {
+  display: flex;
+  align-items: flex-start;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .history-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .domain-container {
+    max-width: 100%;
+  }
+
+  .domain-content {
+    flex-direction: row;
+  }
+
+  .domain-url {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .domain-delete {
+    width: 88%;
+    margin: 10px;
+  }
+}
